@@ -1,0 +1,7 @@
+{
+  "name": "angular-ekart",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

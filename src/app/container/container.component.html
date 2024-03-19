@@ -1,0 +1,24 @@
+<div class="ekart--product--container">
+  <!-- <img style="width:30px;" [src]="product.pImage">
+  <p>Name: {{ product.name }}</p>
+  <p>Price: {{ '$' + product.price }}</p>
+  <p>Color: {{ product.color }}</p>
+  <p>Dicounted Price: ${{ getDiscountedPrice().toFixed(2) }}</p>
+  <p>{{ product.inStock > 0 ? 'Only'+ product.inStock + 'item left' : 'Not in Stock' }}</p>
+  <button (click)="decrementCartValue()">-</button>
+  <span> {{ addToCart }} </span>
+  <button (click)="incrementCartValue()">+</button>
+  <button [disabled]="!(product.inStock > 0)"> Buy Now </button>
+  <input bind-value="name" (input)="onNameChange($event)">
+  <p> name: {{ name }} </p> -->
+
+  <app-search></app-search>
+  <div *ngFor="let item of listOfString">
+    <p>Current element of array is: {{ item }}</p>
+  </div>
+  <product-list></product-list>
+</div>
+
+<!-- bind-value와 [value] 같은 의미이다. -->
+<!-- html attribute, html property -->
+
