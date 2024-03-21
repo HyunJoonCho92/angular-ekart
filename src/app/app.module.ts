@@ -15,12 +15,13 @@ import { ContainerComponent } from './container/container.component';
 import { SearchComponent } from './container/search/search.component';
 import { ProductListComponent } from './container/product-list/product-list.component';
 import { ProductComponent } from './container/product-list/product/product.component';
+import { FilterComponent } from './container/product-list/filter/filter.component';
 
 import { FormsModule } from '@angular/forms'; // ngModel 사용을 위해 추가
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, TopHeaderComponent, TopMenuComponent, MainMenuComponent, ContainerComponent, SearchComponent,
-    ProductListComponent, ProductComponent ],
+    ProductListComponent, ProductComponent, FilterComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],

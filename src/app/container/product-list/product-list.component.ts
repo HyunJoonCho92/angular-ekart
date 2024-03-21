@@ -534,6 +534,17 @@ export class ProductListComponent implements OnInit {
     }
   ];
 
+  totalProductCount = this.products.length;
+  totalProductInStock = this.products.filter(p => p.is_in_inventory === true).length;
+  totalProductOutOfStock = this.products.filter(p => p.is_in_inventory === false).length;
+
+  selectedFilterRadioButton: string = 'all';
+
+  onFilterChanged(value) {
+    this.selectedFilterRadioButton = value;
+    console.log(value);
+  }
+
   constructor() { }
 
   ngOnInit() { }
