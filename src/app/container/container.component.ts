@@ -49,13 +49,11 @@ export class ContainerComponent implements OnInit {
   ////////////////////////
   listOfString: string[] = ['Apple', 'Banana', 'Cherry', 'Dates', 'Elderberry'];
 
-  
+
   searchText: string = '';
 
   setSearchText(value: string) {
     this.searchText = value;
   }
 
-
-  controlwrapHeight: string = '100px';
 }
