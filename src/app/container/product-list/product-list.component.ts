@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'product-list',
@@ -537,6 +537,9 @@ export class ProductListComponent implements OnInit {
   totalProductCount = this.products.length;
   totalProductInStock = this.products.filter(p => p.is_in_inventory === true).length;
   totalProductOutOfStock = this.products.filter(p => p.is_in_inventory === false).length;
+
+  @Input()
+  searchText: string = '';
 
   selectedFilterRadioButton: string = 'all';
 

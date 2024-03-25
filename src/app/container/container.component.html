@@ -12,13 +12,14 @@
   <input bind-value="name" (input)="onNameChange($event)">
   <p> name: {{ name }} </p> -->
 
-  <app-search></app-search>
-  <div *ngFor="let item of listOfString">
+  <app-search (searchTextChanged)="setSearchText($event)"></app-search>
+  <!-- <div *ngFor="let item of listOfString">
     <p>Current element of array is: {{ item }}</p>
-  </div>
-  <product-list></product-list>
+  </div> -->
+  <product-list [searchText] = "searchText"></product-list>
 </div>
 
 <!-- bind-value와 [value] 같은 의미이다. -->
 <!-- html attribute, html property -->
+
 
